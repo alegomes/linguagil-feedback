@@ -9,9 +9,17 @@ div {
 		border-bottom-right-radius:10px 10px;
 		border-top-left-radius:10px 10px;
 		border-top-right-radius:10px 10px;
-		color:black;
-		width: 32%;
 		margin: 6px;
+		color:black;
+		width: 100%;
+		overflow: auto;
+		background-color:#E6E6E6;
+}
+
+.feedback {
+	width: 32%;
+	height: 70%;
+	overflow: auto;	
 }
 
 #good {
@@ -27,4 +35,9 @@ div {
 #suggestion {
 	background-color:yellow;
 	float:left;
+}
+
+p#title {
+	font-size: 3.0em;
+	display: inline;
 }

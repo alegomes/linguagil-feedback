@@ -3,9 +3,27 @@
 <head>
 	<meta http-equiv="Content-Type"  content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="/css/main.css" type="text/css" charset="utf-8" media="screen">
+	
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-18637644-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
 </head>
 
-<div id="good">
+<p id="title">@linguagil</p>
+
+<div id="good" class="feedback">
 	<ul>
 	<% @good_tweets.each do |tweet| %>
 		<li>
@@ -17,7 +35,7 @@
 	</ul>
 </div>
 
-<div id="notsogood">
+<div id="notsogood" class="feedback">
 	<ul>
 	<% @bad_tweets.each do |tweet| %>
 		<li>
@@ -29,7 +47,7 @@
 	</ul>
 </div>
 
-<div id="suggestion">
+<div id="suggestion" class="feedback">
 	<ul>
 	<% @suggestion_tweets.each do |tweet| %>
 		<li>
@@ -40,5 +58,18 @@
 	<% end %>
 	</ul>
 </div>
+
+<div id="others">
+	<ul>
+	<% @other_tweets.each do |tweet| %>
+		<li>
+			<img src='<%= tweet.profile_image_url %>' />
+			<span>@<%= tweet.from_user %></span>
+			<span><%= tweet.text %></span>
+		</li>
+	<% end %>
+	</ul>
+</div>
+
 
 </html>
