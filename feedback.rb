@@ -4,12 +4,10 @@ require 'twitter'
 require 'erb'
 
 get '/' do
-  @tweets = []
-  
-  Twitter::Search.new('linguagil').each do |r| 
-    @tweets << r
-    puts "#{r.inspect}\n"
-  end
-  
+
+  @good_tweets = Twitter::Search.new('linguagil foibom -podemelhorar')
+  @bad_tweets = Twitter::Search.new('linguagil podemelhorar -foibom')
+  @suggestion_tweets = Twitter::Search.new('linguagil sugestao -foibom -podemelhorar')
+    
   erb :index
 end

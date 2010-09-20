@@ -1,0 +1,30 @@
+div {
+		background-attachment:initial;
+		background-clip:initial;
+		background-image:initial;
+		background-origin:initial;
+		background-position:initial initial;
+		background-repeat:initial initial;
+		border-bottom-left-radius:10px 10px;
+		border-bottom-right-radius:10px 10px;
+		border-top-left-radius:10px 10px;
+		border-top-right-radius:10px 10px;
+		color:black;
+		width: 32%;
+		margin: 6px;
+}
+
+#good {
+	background-color:green;
+	float:left;
+}
+
+#notsogood {
+	background-color:red;
+	float:left;
+}
+
+#suggestion {
+	background-color:yellow;
+	float:left;
+}
