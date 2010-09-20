@@ -1,2 +1,2 @@
-require 'hello'
+require 'feedback'
 run Sinatra::Application
