@@ -1,6 +1,6 @@
 
 <% @tweets.each do |tweet| %>
 	<div>
-		<img src='<%= tweet.profile_image %>' />@<%= tweet.from_user %> - <%= tweet.text %>
+		<img src='<%= tweet.profile_image_url %>' />@<%= tweet.from_user %> - <%= tweet.text %>
 	</div>
 <% end %>
