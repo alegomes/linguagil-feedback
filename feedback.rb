@@ -8,6 +8,7 @@ get '/' do
   
   Twitter::Search.new('linguagil').each do |r| 
     @tweets << r
+    puts "#{r.inspect}\n"
   end
   
   erb :index
