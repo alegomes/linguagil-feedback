@@ -1,10 +1,4 @@
 div {
-		background-attachment:initial;
-		background-clip:initial;
-		background-image:initial;
-		background-origin:initial;
-		background-position:initial initial;
-		background-repeat:initial initial;
 		border-bottom-left-radius:10px 10px;
 		border-bottom-right-radius:10px 10px;
 		border-top-left-radius:10px 10px;
@@ -12,7 +6,7 @@ div {
 		margin: 6px;
 		color:black;
 		width: 100%;
-		overflow: auto;
+		overflow: auto; /* TODO [ALE] Style scroll bar */
 		background-color:#E6E6E6;
 }
 
@@ -40,4 +34,8 @@ div {
 p#title {
 	font-size: 3.0em;
 	display: inline;
+}
+
+ul {
+	list-style-type:none;
 }
